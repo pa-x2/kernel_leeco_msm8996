@@ -1482,6 +1482,7 @@ void diag_dci_notify_client(int peripheral_mask, int data, int proc)
 				}
 				put_task_struct(dci_task);
 				put_pid(pid_struct);
+
 			}
 		}
 	}
