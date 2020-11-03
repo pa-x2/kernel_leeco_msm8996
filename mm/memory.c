@@ -1178,7 +1178,7 @@ again:
 							tlb->fullmm);
 			tlb_remove_tlb_entry(tlb, pte, addr);
 			if (unlikely(!page)){
-				uksm_unmap_zero_page(ptent)
+				uksm_unmap_zero_page(ptent);
 				continue;
 			}
 			if (unlikely(details) && details->nonlinear_vma
