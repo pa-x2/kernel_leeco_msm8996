@@ -565,11 +565,8 @@ module_param_named(
 	int, S_IRUSR | S_IWUSR
 );
 
-#ifdef CONFIG_VENDOR_LEECO
-static int smbchg_default_dcp_icl_ma = 1500;
-#else
 static int smbchg_default_dcp_icl_ma = 1800;
-#endif
+
 module_param_named(
 	default_dcp_icl_ma, smbchg_default_dcp_icl_ma,
 	int, S_IRUSR | S_IWUSR
